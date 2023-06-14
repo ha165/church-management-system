@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script>
+  <link rel="stylesheet" href="css/style1.css">
+  <title>Signup</title>
+</head>
+<body>
+  <div class="wrapper1">
+    <div class="form-wrapper1 sign-up" > 
+         <form action="signup.php" method="post">
+           <h2>Sign Up</h2>
+           <div class="mb-3">
+            <input type="number" class="form-control" name="idnumber" required>
+            <label for="">ID Number</label>
+         </div>
+           <div class="mb-3">
+              <input type="text" class="form-control" name="fname" required>
+              <label for="">FirstName</label>
+           </div>
+           <div class="mb-3">
+              <input type="text" class="form-control" name="sname" required>
+              <label for="">  SecondName</label>
+           </div>
+           <div class="mb-3">
+              <input type="number" class="form-control" name="age" required>
+              <label for="">Age</label>
+           </div>
+           <div class="mb-3">
+            <input type="radio" class="form-control" name="gender" value="Male" required>
+            <input type="radio"  class="form-control" name="gender" value="female" required>
+            <label for="">Gender</label>
+         </div>
+           <div class="mb-3">
+              <input type="text" class="form-control" name="residence" required>
+              <label class="form-label" for="">Residence</label>
+           </div>
+           <div class="mb-3">
+              <input type="number" class="form-control" name="pnum" required>
+              <label  class="form-label"for="">PhoneNumber</label>
+           </div>
+           <div class="mb-3">
+              <input type="email"  class="form-control"name= "email" required>
+              <label  class="form-label" for="">EmailAddress</label>
+           </div>
+           <div class="mb-3">
+              <input type="password" class="form-control" name="pass" required>
+              <label class="form-label" for="">Password</label>
+           </div>
+           <div class="mb-3">
+              <input type="password" class="form-control" name="confirmpass" required>
+              <label  class="form-label"for="">Confirm Password</label>
+           </div>
+           <button type="submit">Sign Up</button>
+           <div class="signin-link">
+            <p> Already have an accoount? <a href="index.php" class="btn btn-secondary">Sign in</a></p>
+           </div>
+         </form>
+    </div>
+  </div>
+</body>
+</html>
