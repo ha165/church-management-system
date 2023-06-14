@@ -1,7 +1,7 @@
 <?php
 include '../includes/header.php';
 include '../includes/functions.php';
-$mysqli = require_once __DIR__ ."../../connection/connect.php";
+
 $id = htmlspecialchars($_POST["id"]);
 $table = 'members';
 $where = "ID_Number= $id";
@@ -18,5 +18,8 @@ $result = updatedata($table,$data,$where);
 
 if ($result){
     echo "<script type='text/javascript'> alert('Details Updated Sucessfuly');window.location.href='members.php'; </script>";
+}else{
+    echo "<script type='text/javascript'> alert('Details Failed to update');window.location.href='members.php'; </script>";
 }
 ?>
+
