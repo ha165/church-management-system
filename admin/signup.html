@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style1.css">
+  <title>Signup</title>
+</head>
+<body>
+  <div class="wrapper1">
+    <div class="form-wrapper1 sign-up" > 
+         <form action="signup.php" method="post">
+           <h2>Sign Up</h2>
+           <div class="input-group">
+              <input type="text" name="username" required>
+              <label for="">Username</label>
+           </div>
+           <div class="input-group">
+            <input type="email" name= "email" required>
+            <label for="">EmailAddress</label>
+         </div>
+           <div class="input-group">
+              <input type="number" name="phonenumber" required>
+              <label for="">PhoneNumber</label>
+           </div>
+           <div class="input-group">
+              <input type="password" name="pass" required>
+              <label for="">Password</label>
+           </div>
+           <div class="input-group">
+              <input type="password" name="confirmpass" required>
+              <label for="">Confirm Password</label>
+           </div>
+           <button type="submit">Sign Up</button>
+           <div class="signin-link">
+            <p> Already have an accoount? <a href="login.php" class="signinbtn-link">Sign in</a></p>
+           </div>
+         </form>
+    </div>
+  </div>
+</body>
+</html>
